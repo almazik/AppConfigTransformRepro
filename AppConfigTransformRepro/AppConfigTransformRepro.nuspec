@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>AppConfig.Transform.Repro</id>
+    <version>1.0.0.0</version>
+    <title>AppConfigTransformRepro</title>
+    <authors>Sergei Almazov</authors>
+    <owners>Sergei Almazov</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Reproduces the bug with Xxx.config.transform incorrect generation</description>
+    <copyright>Copyright 2014</copyright>
+    <tags>Nuget config.transform Bug</tags>
+  </metadata>
+</package>
