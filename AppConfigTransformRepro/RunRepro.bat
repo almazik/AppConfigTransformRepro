@@ -1,4 +1,8 @@
 @ECHO OFF
+
+ECHO ****Restoring dependent projects
+nuget restore -SolutionDirectory ..\
+
 msbuild /t:rebuild >nul
 
 ECHO ****Generating the package that contains app.config.transform instead of app.config in the content folder
@@ -10,5 +14,5 @@ ren packages.config packages1.config >nul
 ECHO ****Generating the package that contains correct app.config in the content folder
 nuget pack -Version 1.0.0.0-GOOD -Verbosity detailed
 
-ECHO ****Restoring packages.config
+ECHO ****Renaming packages.config back to original name
 ren packages1.config packages.config >nul
